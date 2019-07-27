@@ -12,6 +12,7 @@ function interval(){
 function timeout(){
     clear();
     setTimeout(function(){
+        document.getElementById("testdiv").innerHTML="01"
         document.getElementById("testdiv").innerHTML="00";
     },2000,"JavaScript");
 }
