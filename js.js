@@ -14,7 +14,7 @@ function timeout(){
     setTimeout(function(){
         document.getElementById("testdiv1").innerHTML="01"
         document.getElementById("testdiv").innerHTML="00";
-    },2000,"JavaScript");
+    },10,"JavaScript");
 }
 function clear(){
     clearInterval(inter);
