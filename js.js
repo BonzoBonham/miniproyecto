@@ -1,6 +1,7 @@
 var inter,t;
 function interval(){
-    t=60;
+    document.getElementById("testdiv1").innerHTML="00"
+    t=59;
     inter=setInterval(function(){
         document.getElementById("testdiv").innerHTML=t--;
 		if(t == -1){
@@ -11,7 +12,7 @@ function interval(){
 function timeout(){
     clear();
     setTimeout(function(){
-        document.getElementById("testdiv").innerHTML="";
+        document.getElementById("testdiv").innerHTML="00";
     },2000,"JavaScript");
 }
 function clear(){
