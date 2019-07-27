@@ -11,21 +11,10 @@ function interval(){
 function timeout(){
     clear();
     setTimeout(function(){
-        document.getElementById("testdiv").innerHTML="Pasaron 2 segundos antes de que vieras esto.";
+        document.getElementById("testdiv").innerHTML="";
     },2000,"JavaScript");
 }
 function clear(){
     clearInterval(inter);
 }
 
-var timout;
-function apagar(){
-    document.getElementById("testdiv").innerHTML="En 10 segundos se apagará el computador.";
-    timout=setTimeout(function(){
-        document.getElementById("testdiv").innerHTML="Computador apagado.";
-    },10000,"JavaScript");
-}
-function cancelar(){
-    clearTimeout(timout);
-    document.getElementById("testdiv").innerHTML="Operación cancelada.";
-}
